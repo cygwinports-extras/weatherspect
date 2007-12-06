@@ -1,0 +1,15 @@
+DESCRIPTION="Terminal weather animation"
+HOMEPAGE="http://www.robobunny.com/projects/weatherspect/html/"
+SRC_URI="http://www.robobunny.com/projects/${PN}/${PN}_v${PV}.tar.gz"
+SRC_DIR="${PN}_v${PV}"
+
+src_compile() { :; }
+
+src_test() {
+	perl ${S}/weatherspect -c || error "weatherspect config failed"
+	perl ${S}/weatherspect || error "weatherspect failed"
+}
+
+src_install() {
+	dobin ${S}/weatherspect
+}

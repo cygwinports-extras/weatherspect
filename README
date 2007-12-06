@@ -1,0 +1,65 @@
+weatherspect
+-------------------------------------------
+WeatherSpect provides a reasonably accurate simulation of what the 
+weather looks like outside, in ASCII art. It includes rain, snow, 
+lightning, sleet, and hail.
+
+Runtime requirements:
+  perl-5.8.8-4
+  perl-Curses-1.17-1
+  perl-Term-Animation-2.4-1
+  perl-Weather-Underground-3.02-1
+
+Canonical homepage:
+  http://robobunny.com/projects/weatherspect/
+
+-------------------------------------------
+
+Build instructions:
+  unpack weatherspect-1.8-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./weatherspect-1.8-1.cygport all
+
+This will create:
+  /usr/src/weatherspect-1.8-1-src.tar.bz2
+  /usr/src/weatherspect-1.8-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/weatherspect
+  /usr/share/doc/Cygwin/weatherspect-1.8.README
+  /usr/share/doc/weatherspect-1.8/CHANGES
+  /usr/share/doc/weatherspect-1.8/GPL.txt
+  /usr/share/doc/weatherspect-1.8/README
+
+------------------
+
+Port Notes:
+
+----- version 1.8-1 -----
+Version bump, requires Term::Animation 2.4.
+
+----- version 1.6-1 -----
+New upstream release for Weather::Underground 3.0.
+
+----- version 1.5-1 -----
+New upstream release for Term::Animation 2.0.
+
+----- version 1.4-1 -----
+New upstream release; fixes bugs with cloud rendering.
+
+----- version 1.2-1 -----
+New upstream release.
+
+  - Fix for new temperature and wind formats
+
+----- version 1.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by: 
+http://cygwinports.dotsrc.org/
