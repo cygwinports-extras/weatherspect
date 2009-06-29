@@ -1,5 +1,5 @@
 category: Games
-requires: cygwin perl perl-Curses perl-Term-Animation perl-Weather-Underground
+requires: perl perl-Curses perl-Term-Animation perl-Weather-Underground
 sdesc: "Terminal weather animation"
 ldesc: "WeatherSpect provides a reasonably accurate simulation of what 
 the weather looks like outside, in ASCII art. It includes rain, snow, 
